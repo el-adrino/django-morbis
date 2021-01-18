@@ -7,7 +7,6 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN pip install --upgrade pip
-COPY ./app/backend-morbis/morbis/requirements.txt ./requirements.txt
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
